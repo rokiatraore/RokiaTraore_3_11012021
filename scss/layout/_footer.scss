@@ -1,0 +1,19 @@
+@mixin footer{
+    background-color: #3E3C3C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    font-family: $policetexte;
+
+    h3{
+        font-family: $policelogo_titre;
+        font-weight: 100;
+    }
+
+    a{
+        text-decoration: none;
+        color: white;
+        margin: 0px 0px 10px 0px;
+    }
+}

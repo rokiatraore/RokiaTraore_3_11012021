@@ -1,0 +1,17 @@
+@mixin header {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    background-color: #e7e8e8 ;
+}
+
+@mixin headermenu {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+
+    i{
+        position: absolute;
+        left: 30px;
+    } 
+}

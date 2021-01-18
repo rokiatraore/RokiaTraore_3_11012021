@@ -1,0 +1,21 @@
+$couleurprimaire : #9356DC;
+$couleursecondaire : #FF79DA;
+$couleurtertiaire :#99E2D0 ;
+$policetexte : 'Roboto', sans-serif;
+$policelogo_titre : 'Shrikhand', cursive;
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+}
+
+
+@mixin boutton{
+    border-radius: 30px;
+    border: none;
+    box-shadow: 1px 2px 5px grey;
+    font-weight: 600;
+    padding: 15px;
+    color: white;
+    background: linear-gradient($couleurprimaire, $couleursecondaire);
+}
