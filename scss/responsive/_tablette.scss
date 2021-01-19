@@ -1,0 +1,34 @@
+$breakpoints : (
+    tablette : 768px,
+    tablette2 : 600px
+    );
+
+   
+
+@mixin tablette-only--btn {
+    @media all and (min-width : map-get($breakpoints, tablette)){
+        
+            display: flex;
+            flex-wrap: wrap;
+        
+    }
+    
+}
+
+
+@mixin tablette-only--figure {
+    @media all and (min-width : map-get($breakpoints, tablette2)){
+        .restaurants__presentation{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        figure{
+            width: 287px;
+            height: auto;
+            margin-right: 20px;
+            font-size: 13px;}
+        
+    }
+    
+}
+
