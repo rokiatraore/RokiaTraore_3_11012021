@@ -29,7 +29,7 @@ span {
 .description {
   text-align: center;
   padding: 15px;
-  background-color: #e7e8e8;
+  background-color: #fafafa;
 }
 .description p {
   color: grey;
@@ -43,19 +43,24 @@ span {
   color: white;
   background: linear-gradient(#9356DC, #FF79DA);
 }
+@media all and (min-width: 588px) {
+  .description button {
+    width: 200px;
+  }
+}
 
 .fonctionnement {
   padding: 15px;
 }
 .fonctionnement__btn .btn__numero {
-  width: 20px;
-  height: 20px;
-  line-height: 20px;
-  border: 1px solid;
+  width: 9px;
+  height: 23px;
+  line-height: 34px;
   border-radius: 15px;
   text-align: center;
   position: absolute;
-  left: 6px;
+  left: -7px;
+  top: 14px;
   background-color: #9356DC;
   color: white;
   font-weight: 100;
@@ -66,6 +71,7 @@ span {
 .fonctionnement__btn a {
   display: flex;
   justify-content: center;
+  position: relative;
   border-radius: 30px;
   border: none;
   box-shadow: 1px 2px 5px grey;
@@ -74,15 +80,35 @@ span {
   margin: 0px 0px 20px 0px;
   text-decoration: none;
   color: black;
+  background-color: #fafafa;
   font-size: 12px;
 }
 .fonctionnement__btn a .fas {
   color: grey;
 }
+@media all and (min-width: 588px) {
+  .fonctionnement__btn {
+    display: flex;
+    justify-content: space-around;
+  }
+}
 
 .restaurants {
   background-color: #fafafa;
   padding: 15px;
+}
+.restaurants a {
+  text-decoration: none;
+  color: black;
+}
+.restaurants a .etiquette {
+  position: absolute;
+  bottom: 226px;
+  right: 0px;
+  text-align: center;
+  padding: 1px 20px 1px 20px;
+  background-color: #99E2D0;
+  color: #42a28c;
 }
 .restaurants figure {
   width: 100%;
@@ -91,6 +117,9 @@ span {
   border-radius: 20px;
   box-shadow: 1px 1px 8px #b8b2b2;
   overflow: hidden;
+}
+.restaurants figure:hover {
+  box-shadow: 1px 1px 5px black;
 }
 .restaurants figure img {
   width: 100%;
@@ -102,6 +131,7 @@ span {
   justify-content: center;
   justify-content: space-between;
   margin: 0px 10px 0px 10px;
+  position: relative;
 }
 .restaurants figure figcaption .restaurants__legende {
   line-height: 4px;
@@ -114,6 +144,19 @@ span {
 .restaurants .btn {
   display: block;
   margin: auto;
+}
+@media all and (min-width: 588px) {
+  .restaurants .restaurants__presentation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .restaurants figure {
+    width: 240px;
+    height: auto;
+    margin-right: 20px;
+    font-size: 13px;
+  }
 }
 
 footer {
@@ -132,6 +175,27 @@ footer a {
   text-decoration: none;
   color: white;
   margin: 0px 0px 10px 0px;
+}
+footer .footer__items {
+  display: flex;
+  flex-direction: column;
+}
+@media all and (min-width: 588px) {
+  footer {
+    display: block;
+    text-align: center;
+  }
+  footer h3 {
+    font-size: 28px;
+  }
+  footer a {
+    padding: 10px;
+  }
+  footer .footer__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 header {

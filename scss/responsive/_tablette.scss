@@ -1,15 +1,22 @@
 $breakpoints : (
-    tablette : 768px,
-    tablette2 : 600px
+    tablette2 : 588px
     );
 
-   
 
-@mixin tablette-only--btn {
-    @media all and (min-width : map-get($breakpoints, tablette)){
+@mixin tablette-only--boutton {
+        @media all and (min-width : map-get($breakpoints, tablette2)){
+            
+                width: 200px;
+            
+        }
+        
+    }
+
+@mixin tablette-only--fonctionnement {
+    @media all and (min-width : map-get($breakpoints, tablette2)){
         
             display: flex;
-            flex-wrap: wrap;
+            justify-content: space-around;
         
     }
     
@@ -21,14 +28,43 @@ $breakpoints : (
         .restaurants__presentation{
             display: flex;
             flex-wrap: wrap;
+            justify-content: center;
         }
         figure{
-            width: 287px;
+            width: 240px;
             height: auto;
             margin-right: 20px;
-            font-size: 13px;}
+            font-size: 13px;
+        }
         
     }
     
 }
+
+@mixin tablette-only--footer {
+    @media all and (min-width : map-get($breakpoints, tablette2)){
+
+                display: block;
+                text-align: center;
+
+                h3{
+                    font-size: 28px;
+                }
+                
+
+                a{
+                    padding: 10px;
+                }
+
+                .footer__items{
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+
+                }
+        
+    }
+}
+
 
