@@ -68,3 +68,20 @@ $breakpoints : (
 }
 
 
+@mixin tablette-only--menu {
+    @media all and (min-width : map-get($breakpoints, tablette2)){
+        
+        .menu__plats{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .menu__titre{
+            display: flex;
+            
+            justify-content: center;
+        }
+    }
+}
+

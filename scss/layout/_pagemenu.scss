@@ -23,6 +23,7 @@
         border-top-left-radius: 30px ;
         border-top-right-radius: 30px ;
         padding-bottom: 20px;
+
     
         .menu__titre{
             font-family: $policelogo_titre;
@@ -58,17 +59,28 @@
         }
     
         .menu__items{
+
+            display: flex;
+            justify-content: space-between;
+            overflow: hidden;
     
             background-color: white;
             border-radius: 20px;
             padding: 1px 5px 1px 5px;
             margin-top: 10px;
-            line-height: 1px;
+           
     
-            div{
-                display: flex;
-                justify-content: space-between;
-                
+            .menu__accompagnement{
+                width: 240px;
+            }
+
+            i{
+                padding-left: 10px;
+                background-color: $couleurtertiaire;
+                width: 100%;
+                height: 100%;
+
+              
             }
         }
     }
