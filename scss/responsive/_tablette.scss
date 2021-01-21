@@ -77,6 +77,10 @@ $breakpoints : (
             justify-content: space-around;
         }
 
+        article{
+            min-width: 340px;
+        }
+
         .menu__titre{
             display: flex;
             

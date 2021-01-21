@@ -3,6 +3,13 @@ body{
     font-family: $policetexte;
   }
 
+.progress-bar{
+        width: 150px;
+        height: 20px;
+        background: $couleursecondaire;
+        animation:  progressBar 1s;}
+
+
 
 header{
     @include header;
@@ -123,9 +130,13 @@ header{
         border-radius: 20px;
         box-shadow: 1px 1px 8px rgb(184, 178, 178);
         overflow: hidden;
+        transition: transform 0.9s;
+        
 
         &:hover{
             box-shadow: 1px 1px 5px black;
+            transform: scale(1.1);
+       
         }
 
         img{
@@ -149,6 +160,9 @@ header{
                 display: flex;
                 align-items: center;
                 font-size: 25px;
+                cursor: pointer;
+                transition: 1s;
+                animation:coeur 0.3s ;
             }
 
              i:hover{

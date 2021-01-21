@@ -15,6 +15,22 @@
     
         }
     }
+
+    i{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+     i:hover{
+        font-weight: bold;
+        color: $couleurprimaire;
+        transition: 1s;
+        animation:coeur 0.3s ;
+        }
+
+  
     
     .menu{ 
         background-color:  #e7e8e8;
@@ -38,6 +54,7 @@
     
         article{
             padding: 10px;
+            animation: slideUp 3s;
             h2{
                 font-weight: 100;
                 font-size: 20px;}
@@ -52,37 +69,65 @@
                         border: none;
                         margin: -10px 0px 0px 0px;
                     }
-                }
-                    
-                
-            
+                }  
         }
     
         .menu__items{
-
             display: flex;
             justify-content: space-between;
             overflow: hidden;
-    
             background-color: white;
             border-radius: 20px;
-            padding: 1px 5px 1px 5px;
+            padding-left: 10px;
             margin-top: 10px;
-           
-    
-            .menu__accompagnement{
-                width: 240px;
+            cursor: pointer;
+            
+
+            .blocicone{
+                display: none;
+            }
+ 
+            }
+             
+
+            .menu__description{
+                width: 87%;
+                h3{
+                    margin: 10px 0px 10px 0px;
+                }
+                p{
+                    margin-bottom: 10px;
+                }
             }
 
-            i{
-                padding-left: 10px;
-                background-color: $couleurtertiaire;
-                width: 100%;
-                height: 100%;
+            .prix{
+                display: inline-flex;
+                align-items: flex-end;
+                font-weight: bold;
+                padding-right: 20px;
 
-              
+                p{
+                    margin: 0;
+                    margin-bottom: 10px;
+                }
             }
+
+            
         }
+
+        .menu__items:hover{
+            
+            .blocicone{
+                display: inline-flex;
+                background-color: $couleurtertiaire;
+                padding: 31px 20px 31px;
+                color: white;
+                animation: slideRight  0.5s;
+
+            } 
+            .icone{
+                animation:  rotateIcone 0.6s;
+            }       
     }
     
     button{
@@ -90,6 +135,13 @@
         width: 40%;
         display: block;
         margin: 20px auto;
+        cursor: pointer;
+        transition: transform 0.9s;
+
+        
+    }
+    button:hover{
+        transform: scale(1.1);
     }
     
 }

@@ -15,5 +15,9 @@
         text-decoration: none;
         color: white;
         margin: 0px 0px 10px 0px;
+
+        &:hover{
+            text-decoration: underline;
+        }
     }
 }

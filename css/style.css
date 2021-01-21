@@ -1,6 +1,70 @@
+@keyframes slideUp {
+  from {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideRight {
+  from {
+    transform: translatex(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes rotateIcone {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes coeur {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes progressBar {
+  0% {
+    transform: scaleX(0);
+    opacity: 0.1;
+  }
+  17% {
+    transform: scaleX(0.18);
+  }
+  24% {
+    transform: scaleX(0.4);
+  }
+  46% {
+    transform: scaleX(0.81);
+  }
+  85%, 100% {
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+}
+
+.progress-bar {
+  width: 150px;
+  height: 20px;
+  background: #FF79DA;
+  animation: progressBar 1s;
 }
 
 header {
@@ -117,9 +181,11 @@ span {
   border-radius: 20px;
   box-shadow: 1px 1px 8px #b8b2b2;
   overflow: hidden;
+  transition: transform 0.9s;
 }
 .restaurants figure:hover {
   box-shadow: 1px 1px 5px black;
+  transform: scale(1.1);
 }
 .restaurants figure img {
   width: 100%;
@@ -140,6 +206,9 @@ span {
   display: flex;
   align-items: center;
   font-size: 25px;
+  cursor: pointer;
+  transition: 1s;
+  animation: coeur 0.3s;
 }
 .restaurants figure figcaption i:hover {
   font-weight: bold;
@@ -180,6 +249,9 @@ footer a {
   text-decoration: none;
   color: white;
   margin: 0px 0px 10px 0px;
+}
+footer a:hover {
+  text-decoration: underline;
 }
 footer .footer__items {
   display: flex;
@@ -226,6 +298,20 @@ header i {
   object-fit: cover;
 }
 
+i {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+i:hover {
+  font-weight: bold;
+  color: #9356DC;
+  transition: 1s;
+  animation: coeur 0.3s;
+}
+
 .menu {
   background-color: #e7e8e8;
   width: 100%;
@@ -245,6 +331,7 @@ header i {
 }
 .menu article {
   padding: 10px;
+  animation: slideUp 3s;
 }
 .menu article h2 {
   font-weight: 100;
@@ -266,17 +353,42 @@ header i {
   overflow: hidden;
   background-color: white;
   border-radius: 20px;
-  padding: 1px 5px 1px 5px;
-  margin-top: 10px;
-}
-.menu .menu__items .menu__accompagnement {
-  width: 240px;
-}
-.menu .menu__items i {
   padding-left: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.menu .menu__items .blocicone {
+  display: none;
+}
+.menu .menu__description {
+  width: 87%;
+}
+.menu .menu__description h3 {
+  margin: 10px 0px 10px 0px;
+}
+.menu .menu__description p {
+  margin-bottom: 10px;
+}
+.menu .prix {
+  display: inline-flex;
+  align-items: flex-end;
+  font-weight: bold;
+  padding-right: 20px;
+}
+.menu .prix p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.menu__items:hover .blocicone {
+  display: inline-flex;
   background-color: #99E2D0;
-  width: 100%;
-  height: 100%;
+  padding: 31px 20px 31px;
+  color: white;
+  animation: slideRight 0.5s;
+}
+.menu__items:hover .icone {
+  animation: rotateIcone 0.6s;
 }
 
 button {
@@ -290,6 +402,12 @@ button {
   width: 40%;
   display: block;
   margin: 20px auto;
+  cursor: pointer;
+  transition: transform 0.9s;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
 
 @media all and (min-width: 588px) {
@@ -297,6 +415,10 @@ button {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+
+  article {
+    min-width: 340px;
   }
 
   .menu__titre {
