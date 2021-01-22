@@ -16,6 +16,7 @@ $breakpoints : (
     @media all and (min-width : map-get($breakpoints, tablette2)){
         
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
         
     }
