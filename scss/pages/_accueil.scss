@@ -90,11 +90,24 @@ header{
 .fonctionnement{
     padding: 15px;
 
-    ul
+    ol
         { 
             counter-reset: numerotation;
             li{
                 list-style: none;
+                @include flex;
+                position: relative;
+                border-radius: 30px;
+                border: none;
+                box-shadow: 1px 2px 5px grey;
+                font-weight: 600;
+                padding: 20px;
+                margin: 0px 0px 20px 0px;
+                text-decoration: none;
+                color: black;
+                background-color:#fafafa ;
+                font-size: 12px;
+                cursor: pointer;
 
                 &::before{
                     counter-increment: numerotation;
@@ -111,35 +124,17 @@ header{
                     top: 21px;
                     left: -12px;
                 }
-
-                i{
+                .fas{
+                    color: grey;
                     font-size: 19px;
+    
                 }
             }
 
-        a:hover{
+        li:hover{
             background-color: RGBA(147,86,220,0.08);
         }
-        a{
-            @include flex;
-            position: relative;
-            border-radius: 30px;
-            border: none;
-            box-shadow: 1px 2px 5px grey;
-            font-weight: 600;
-            padding: 20px;
-            margin: 0px 0px 20px 0px;
-            text-decoration: none;
-            color: black;
-            background-color:#fafafa ;
-            font-size: 12px;
-
-
-            .fas{
-                color: grey;
-
-            }
-        }
+        
       @include tablette-only--fonctionnement; 
     }
     

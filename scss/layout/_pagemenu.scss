@@ -54,21 +54,20 @@
     
         article{
             padding: 10px;
-            animation: slideUp 3s;
+            
             h2{
                 font-weight: 100;
                 font-size: 20px;}
     
                 
-             span {
-                 padding: 0;
-                    hr{
-                        background-color: #99e2d0;
-                        height: 3px;
-                        width: 40px;
-                        border: none;
-                        margin: -10px 0px 0px 0px;
-                    }
+            .barreSoulignement {
+                    padding: 0;
+                    background-color: #99e2d0;
+                    height: 3px;
+                    width: 40px;
+                    border: none;
+                    margin: -10px 0px 0px 0px;
+                   
                 }  
         }
     
@@ -114,6 +113,38 @@
 
             
         }
+
+        .item1{
+            animation: slideUp 1.25s;
+        }
+        .item2{
+            animation: slideUp 1.50s;
+        }
+        .item3{
+            animation: slideUp 2s;
+        }
+        .item4{
+            animation: slideUp 2.50s;
+        }
+        .item5{
+            animation: slideUp 3s;
+        }
+        .item6{
+            animation: slideUp 3.50s;
+        }
+        .item7{
+            animation: slideUp 4s;
+        }
+        .item8{
+            animation: slideUp 4.50s;
+        }
+        .item9{
+            animation: slideUp 5s;
+        }
+        .item10{
+            animation: slideUp 5.50s;
+        }
+        
 
         .menu__items:hover{
             

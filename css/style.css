@@ -159,13 +159,27 @@ span {
 .fonctionnement {
   padding: 15px;
 }
-.fonctionnement ul {
+.fonctionnement ol {
   counter-reset: numerotation;
 }
-.fonctionnement ul li {
+.fonctionnement ol li {
   list-style: none;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 1px 2px 5px grey;
+  font-weight: 600;
+  padding: 20px;
+  margin: 0px 0px 20px 0px;
+  text-decoration: none;
+  color: black;
+  background-color: #fafafa;
+  font-size: 12px;
+  cursor: pointer;
 }
-.fonctionnement ul li::before {
+.fonctionnement ol li::before {
   counter-increment: numerotation;
   content: counter(numerotation);
   background-color: #9356DC;
@@ -180,32 +194,15 @@ span {
   top: 21px;
   left: -12px;
 }
-.fonctionnement ul li i {
+.fonctionnement ol li .fas {
+  color: grey;
   font-size: 19px;
 }
-.fonctionnement ul a:hover {
+.fonctionnement ol li:hover {
   background-color: RGBA(147, 86, 220, 0.08);
 }
-.fonctionnement ul a {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  border-radius: 30px;
-  border: none;
-  box-shadow: 1px 2px 5px grey;
-  font-weight: 600;
-  padding: 20px;
-  margin: 0px 0px 20px 0px;
-  text-decoration: none;
-  color: black;
-  background-color: #fafafa;
-  font-size: 12px;
-}
-.fonctionnement ul a .fas {
-  color: grey;
-}
 @media all and (min-width: 588px) {
-  .fonctionnement ul {
+  .fonctionnement ol {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -388,16 +385,13 @@ i:hover {
 }
 .menu article {
   padding: 10px;
-  animation: slideUp 3s;
 }
 .menu article h2 {
   font-weight: 100;
   font-size: 20px;
 }
-.menu article span {
+.menu article .barreSoulignement {
   padding: 0;
-}
-.menu article span hr {
   background-color: #99e2d0;
   height: 3px;
   width: 40px;
@@ -435,6 +429,46 @@ i:hover {
 .menu .prix p {
   margin: 0;
   margin-bottom: 10px;
+}
+
+.item1 {
+  animation: slideUp 1.25s;
+}
+
+.item2 {
+  animation: slideUp 1.5s;
+}
+
+.item3 {
+  animation: slideUp 2s;
+}
+
+.item4 {
+  animation: slideUp 2.5s;
+}
+
+.item5 {
+  animation: slideUp 3s;
+}
+
+.item6 {
+  animation: slideUp 3.5s;
+}
+
+.item7 {
+  animation: slideUp 4s;
+}
+
+.item8 {
+  animation: slideUp 4.5s;
+}
+
+.item9 {
+  animation: slideUp 5s;
+}
+
+.item10 {
+  animation: slideUp 5.5s;
 }
 
 .menu__items:hover .blocicone {
