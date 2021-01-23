@@ -105,11 +105,6 @@ body {
   height: 35px;
 }
 
-/*.bar{
-
-    animation: couleurSvg
-    5s linear infinite forwards;
-}*/
 header {
   display: flex;
   justify-content: center;
@@ -266,7 +261,7 @@ span {
   background-color: #99E2D0;
   color: #42a28c;
   position: absolute;
-  top: 21px;
+  top: 0px;
   right: 19px;
 }
 .restaurants .btn {
