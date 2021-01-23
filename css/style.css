@@ -82,7 +82,7 @@ body {
   height: 100%;
   background: #e7e8e8;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   justify-content: center;
   animation: container 5s forwards;
@@ -211,6 +211,17 @@ span {
 .restaurants a {
   text-decoration: none;
   color: black;
+  position: relative;
+}
+.restaurants a .etiquette {
+  max-width: 62px;
+  text-align: center;
+  padding: 1px 20px 1px 20px;
+  background-color: #99E2D0;
+  color: #42a28c;
+  position: absolute;
+  right: -372px;
+  z-index: 1;
 }
 .restaurants figure {
   width: 100%;
@@ -252,17 +263,6 @@ span {
   font-weight: bold;
   color: #9356DC;
   transition: 1s;
-}
-.restaurants figure .etiquette {
-  display: inline-block;
-  max-width: 62px;
-  text-align: center;
-  padding: 1px 20px 1px 20px;
-  background-color: #99E2D0;
-  color: #42a28c;
-  position: absolute;
-  top: 0px;
-  right: 19px;
 }
 .restaurants .btn {
   display: block;
