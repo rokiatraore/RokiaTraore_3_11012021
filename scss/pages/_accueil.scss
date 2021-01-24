@@ -144,18 +144,6 @@ header{
         color: black; 
         position: relative;  
 
-        .etiquette{
-                max-width: 62px;
-                text-align: center;
-                padding: 1px 20px 1px 20px;
-                background-color: $couleurtertiaire;
-                color:  #42a28c;
-                position: absolute;
-                right: -372px;
-                z-index: 1;
-                
-
-        }
     }
 
     figure{
@@ -187,6 +175,19 @@ header{
             margin: 0px 10px 0px 10px;
 
             
+        .etiquette{
+            max-width: 62px;
+            text-align: center;
+            padding: 1px 20px 1px 20px;
+            background-color: $couleurtertiaire;
+            color:  #42a28c;
+            position: absolute;
+            right: 10px;
+            bottom: 200px;
+            z-index: 1;
+            
+
+    }  
             .restaurants__legende{
                 line-height: 4px;
             }

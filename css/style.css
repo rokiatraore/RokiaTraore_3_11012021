@@ -213,16 +213,6 @@ span {
   color: black;
   position: relative;
 }
-.restaurants a .etiquette {
-  max-width: 62px;
-  text-align: center;
-  padding: 1px 20px 1px 20px;
-  background-color: #99E2D0;
-  color: #42a28c;
-  position: absolute;
-  right: -372px;
-  z-index: 1;
-}
 .restaurants figure {
   width: 100%;
   margin: auto;
@@ -247,6 +237,17 @@ span {
   justify-content: center;
   justify-content: space-between;
   margin: 0px 10px 0px 10px;
+}
+.restaurants figure figcaption .etiquette {
+  max-width: 62px;
+  text-align: center;
+  padding: 1px 20px 1px 20px;
+  background-color: #99E2D0;
+  color: #42a28c;
+  position: absolute;
+  right: 10px;
+  bottom: 200px;
+  z-index: 1;
 }
 .restaurants figure figcaption .restaurants__legende {
   line-height: 4px;
