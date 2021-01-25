@@ -1,3 +1,11 @@
+@keyframes btn {
+  from {
+    opacity: 1;
+  }
+  to {
+    background: linear-gradient(360deg, rgba(147, 86, 220, 0.7), rgba(255, 121, 218, 0.7) 100%);
+  }
+}
 @keyframes slideUp {
   from {
     transform: translateY(200px);
@@ -85,7 +93,7 @@ body {
   z-index: 2;
   display: flex;
   justify-content: center;
-  animation: container 5s forwards;
+  animation: container 3s forwards;
 }
 .container .progress-bar {
   width: 150px;
@@ -247,12 +255,12 @@ span {
   position: absolute;
   right: 10px;
   bottom: 200px;
-  z-index: 1;
+  z-index: 0;
 }
 .restaurants figure figcaption .restaurants__legende {
   line-height: 4px;
 }
-.restaurants figure figcaption i {
+.restaurants figure figcaption .icone_coeur {
   display: flex;
   align-items: center;
   font-size: 25px;
@@ -260,7 +268,7 @@ span {
   transition: 1s;
   animation: coeur 0.3s;
 }
-.restaurants figure figcaption i:hover {
+.restaurants figure figcaption .icone_coeur:hover {
   font-weight: bold;
   color: #9356DC;
   transition: 1s;
@@ -348,18 +356,19 @@ header i {
   object-fit: cover;
 }
 
-i {
+.fleche {
   display: flex;
   align-items: center;
   font-size: 25px;
   cursor: pointer;
 }
 
-i:hover {
+.icone_coeur:hover {
   font-weight: bold;
   color: #9356DC;
   transition: 1s;
   animation: coeur 0.3s;
+  cursor: pointer;
 }
 
 .menu {
@@ -408,22 +417,28 @@ i:hover {
   display: none;
 }
 .menu .menu__description {
-  width: 87%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 1;
 }
 .menu .menu__description h3 {
-  margin: 10px 0px 10px 0px;
+  margin: 8px 0px 8px 0px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu .menu__description p {
   margin-bottom: 10px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu .prix {
-  display: inline-flex;
+  display: flex;
   align-items: flex-end;
   font-weight: bold;
-  padding-right: 20px;
-}
-.menu .prix p {
-  margin: 0;
+  padding: 0px 5px 0px 20px;
   margin-bottom: 10px;
 }
 
@@ -468,10 +483,12 @@ i:hover {
 }
 
 .menu__items:hover .blocicone {
-  display: inline-flex;
   background-color: #99E2D0;
-  padding: 31px 20px 31px;
+  width: 4rem;
+  align-items: center;
+  justify-content: center;
   color: white;
+  display: flex;
   animation: slideRight 0.5s;
 }
 .menu__items:hover .icone {
@@ -495,6 +512,7 @@ button {
 
 button:hover {
   transform: scale(1.1);
+  box-shadow: 1px 2px 12px black;
 }
 
 @media all and (min-width: 588px) {
