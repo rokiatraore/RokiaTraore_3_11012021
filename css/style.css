@@ -18,7 +18,7 @@
 }
 @keyframes slideRight {
   from {
-    transform: translatex(200px);
+    transform: translateX(200px);
     opacity: 0;
   }
   to {
