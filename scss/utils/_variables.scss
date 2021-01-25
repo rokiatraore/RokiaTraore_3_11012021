@@ -22,6 +22,16 @@ $policelogo_titre : 'Shrikhand', cursive;
     background: linear-gradient($couleurprimaire, $couleursecondaire);
 }
 
+@keyframes btn{
+    from{
+        opacity: 1;
+    }
+
+    to{
+        background: linear-gradient(360deg, rgba(147, 86, 220,.7), rgba(255, 121, 218,0.7) 100%);
+    }
+}
+
 @keyframes slideUp{
     from{
         transform: translateY(200px);
@@ -37,7 +47,7 @@ $policelogo_titre : 'Shrikhand', cursive;
 @keyframes slideRight {
 
      from{
-        transform: translatex(200px);
+        transform: translateX(200px);
         opacity: 0;
     }
 

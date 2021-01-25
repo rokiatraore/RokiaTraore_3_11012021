@@ -16,18 +16,19 @@
         }
     }
 
-    i{
+    .fleche{
         display: flex;
         align-items: center;
         font-size: 25px;
         cursor: pointer;
     }
 
-     i:hover{
+     .icone_coeur:hover{
         font-weight: bold;
         color: $couleurprimaire;
         transition: 1s;
         animation:coeur 0.3s ;
+        cursor: pointer;
         }
 
   
@@ -90,25 +91,34 @@
              
 
             .menu__description{
-                width: 87%;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                flex: 1;
                 h3{
-                    margin: 10px 0px 10px 0px;
+                    margin: 8px 0px 8px 0px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
                 }
                 p{
                     margin-bottom: 10px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    white-space: nowrap;
                 }
+
+
             }
 
             .prix{
-                display: inline-flex;
+                display: flex;
                 align-items: flex-end;
                 font-weight: bold;
-                padding-right: 20px;
+                padding: 0px 5px 0px 20px;
+                
+                margin-bottom: 10px;
 
-                p{
-                    margin: 0;
-                    margin-bottom: 10px;
-                }
             }
 
             
@@ -149,10 +159,13 @@
         .menu__items:hover{
             
             .blocicone{
-                display: inline-flex;
+                
                 background-color: $couleurtertiaire;
-                padding: 31px 20px 31px;
+                width: 4rem;
+                align-items: center;
+                justify-content: center;
                 color: white;
+                display: flex;
                 animation: slideRight  0.5s;
 
             } 
@@ -168,11 +181,13 @@
         margin: 20px auto;
         cursor: pointer;
         transition: transform 0.9s;
+        
 
         
     }
     button:hover{
         transform: scale(1.1);
+        box-shadow: 1px 2px 12px black;
     }
     
 }

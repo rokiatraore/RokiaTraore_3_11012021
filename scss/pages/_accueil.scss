@@ -11,7 +11,7 @@ body{
       z-index: 2;
       display: flex;
       justify-content: center;
-      animation: container 5s forwards ; 
+      animation: container 3s forwards ; 
 
       .progress-bar{
         width: 150px;
@@ -184,7 +184,7 @@ header{
             position: absolute;
             right: 10px;
             bottom: 200px;
-            z-index: 1;
+            z-index: 0;
             
 
     }  
@@ -192,7 +192,7 @@ header{
                 line-height: 4px;
             }
 
-             i{
+             .icone_coeur{
                 display: flex;
                 align-items: center;
                 font-size: 25px;
@@ -201,7 +201,7 @@ header{
                 animation:coeur 0.3s ;
             }
 
-             i:hover{
+             .icone_coeur:hover{
                 font-weight: bold;
                 color: $couleurprimaire;
                 transition: 1s;
