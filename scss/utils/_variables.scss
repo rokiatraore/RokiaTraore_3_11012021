@@ -22,22 +22,20 @@ $policelogo_titre : 'Shrikhand', cursive;
     background: linear-gradient($couleurprimaire, $couleursecondaire);
 
     &:hover{
-        button:hover{
             transform: scale(1.1);
             box-shadow: 1px 2px 12px black;
-        }
     }
 }
 
-@keyframes btn{
-    from{
-        opacity: 1;
-    }
+/*@keyframes btn{
+    
 
-    to{
+    100%{
         background: linear-gradient(360deg, rgba(147, 86, 220,.7), rgba(255, 121, 218,0.7) 100%);
+        color: white;
+        opacity: 0.5;
     }
-}
+}*/
 
 @keyframes slideUp{
     from{

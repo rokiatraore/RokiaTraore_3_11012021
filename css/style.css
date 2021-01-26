@@ -1,11 +1,12 @@
-@keyframes btn {
-  from {
-    opacity: 1;
-  }
-  to {
-    background: linear-gradient(360deg, rgba(147, 86, 220, 0.7), rgba(255, 121, 218, 0.7) 100%);
-  }
-}
+/*@keyframes btn{
+
+
+    100%{
+        background: linear-gradient(360deg, rgba(147, 86, 220,.7), rgba(255, 121, 218,0.7) 100%);
+        color: white;
+        opacity: 0.5;
+    }
+}*/
 @keyframes slideUp {
   from {
     transform: translateY(200px);
@@ -162,7 +163,7 @@ span {
   color: white;
   background: linear-gradient(#9356DC, #FF79DA);
 }
-.description button:hover button:hover {
+.description button:hover {
   transform: scale(1.1);
   box-shadow: 1px 2px 12px black;
 }
@@ -516,7 +517,7 @@ button {
   cursor: pointer;
   transition: transform 0.9s;
 }
-button:hover button:hover {
+button:hover {
   transform: scale(1.1);
   box-shadow: 1px 2px 12px black;
 }
