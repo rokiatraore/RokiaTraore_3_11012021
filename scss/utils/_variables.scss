@@ -20,6 +20,13 @@ $policelogo_titre : 'Shrikhand', cursive;
     padding: 15px;
     color: white;
     background: linear-gradient($couleurprimaire, $couleursecondaire);
+
+    &:hover{
+        button:hover{
+            transform: scale(1.1);
+            box-shadow: 1px 2px 12px black;
+        }
+    }
 }
 
 @keyframes btn{
@@ -44,18 +51,7 @@ $policelogo_titre : 'Shrikhand', cursive;
     }
 }
 
-@keyframes slideRight {
 
-     from{
-        transform: translateX(200px);
-        opacity: 0;
-    }
-
-    to{
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
 
 @keyframes rotateIcone{
     100%{transform: rotate(360deg);}
@@ -63,22 +59,46 @@ $policelogo_titre : 'Shrikhand', cursive;
 
 @keyframes coeur{
     0%{
+       
         opacity: 0;
     }
 
-    50%{
-        opacity: 0.1;
+    20%{
+        color: $couleurprimaire;
+        font-weight: bold;
+        opacity: 0.2;
        
     }
 
+    40%{
+        color: $couleurprimaire;
+        font-weight: bold;
+        opacity: 0.4;
+       
+    }
+
+    60%{
+        color: $couleurprimaire;
+        font-weight: bold;
+        opacity: 0.6;
+    }
+
+    80%{
+        color: $couleurprimaire;
+        font-weight: bold;
+        opacity: 0.8;
+    }
+
     100%{
+         color: $couleurprimaire;
+         font-weight: bold;
         opacity: 1;
     }
 }
 
 @keyframes container{
     0%{
-        transform: translateX(200);
+        transform: translateX(0);
         opacity: 1;
     }
 

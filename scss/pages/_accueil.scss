@@ -198,12 +198,11 @@ header{
                 font-size: 25px;
                 cursor: pointer;
                 transition: 1s;
-                animation:coeur 0.3s ;
+               
             }
 
              .icone_coeur:hover{
-                font-weight: bold;
-                color: $couleurprimaire;
+                animation:coeur 1s forwards ;
                 transition: 1s;
                 }
         }

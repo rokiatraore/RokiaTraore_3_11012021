@@ -16,16 +16,6 @@
     opacity: 1;
   }
 }
-@keyframes slideRight {
-  from {
-    transform: translateX(200px);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 @keyframes rotateIcone {
   100% {
     transform: rotate(360deg);
@@ -35,16 +25,35 @@
   0% {
     opacity: 0;
   }
-  50% {
-    opacity: 0.1;
+  20% {
+    color: #9356DC;
+    font-weight: bold;
+    opacity: 0.2;
+  }
+  40% {
+    color: #9356DC;
+    font-weight: bold;
+    opacity: 0.4;
+  }
+  60% {
+    color: #9356DC;
+    font-weight: bold;
+    opacity: 0.6;
+  }
+  80% {
+    color: #9356DC;
+    font-weight: bold;
+    opacity: 0.8;
   }
   100% {
+    color: #9356DC;
+    font-weight: bold;
     opacity: 1;
   }
 }
 @keyframes container {
   0% {
-    transform: translateX(200);
+    transform: translateX(0);
     opacity: 1;
   }
   50% {
@@ -152,6 +161,10 @@ span {
   padding: 15px;
   color: white;
   background: linear-gradient(#9356DC, #FF79DA);
+}
+.description button:hover button:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 2px 12px black;
 }
 @media all and (min-width: 588px) {
   .description button {
@@ -266,11 +279,9 @@ span {
   font-size: 25px;
   cursor: pointer;
   transition: 1s;
-  animation: coeur 0.3s;
 }
 .restaurants figure figcaption .icone_coeur:hover {
-  font-weight: bold;
-  color: #9356DC;
+  animation: coeur 1s forwards;
   transition: 1s;
 }
 .restaurants .btn {
@@ -364,11 +375,8 @@ header i {
 }
 
 .icone_coeur:hover {
-  font-weight: bold;
-  color: #9356DC;
+  animation: coeur 1s forwards;
   transition: 1s;
-  animation: coeur 0.3s;
-  cursor: pointer;
 }
 
 .menu {
@@ -489,7 +497,6 @@ header i {
   justify-content: center;
   color: white;
   display: flex;
-  animation: slideRight 0.5s;
 }
 .menu__items:hover .icone {
   animation: rotateIcone 0.6s;
@@ -509,8 +516,7 @@ button {
   cursor: pointer;
   transition: transform 0.9s;
 }
-
-button:hover {
+button:hover button:hover {
   transform: scale(1.1);
   box-shadow: 1px 2px 12px black;
 }
