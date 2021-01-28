@@ -1,6 +1,8 @@
 $couleurprimaire : #9356DC;
 $couleursecondaire : #FF79DA;
 $couleurtertiaire :#99E2D0 ;
+$lighter: lighten($couleurprimaire,5%);
+$lighter2: lighten($couleursecondaire, 3%);
 $policetexte : 'Roboto', sans-serif;
 $policelogo_titre : 'Shrikhand', cursive;
 
@@ -24,18 +26,12 @@ $policelogo_titre : 'Shrikhand', cursive;
     &:hover{
             transform: scale(1.1);
             box-shadow: 1px 2px 12px black;
+            background: linear-gradient($lighter, $lighter2);
+            
     }
 }
 
-/*@keyframes btn{
-    
 
-    100%{
-        background: linear-gradient(360deg, rgba(147, 86, 220,.7), rgba(255, 121, 218,0.7) 100%);
-        color: white;
-        opacity: 0.5;
-    }
-}*/
 
 @keyframes slideUp{
     0%{
@@ -45,6 +41,18 @@ $policelogo_titre : 'Shrikhand', cursive;
 
     100%{
         transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideright{
+    0%{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
         opacity: 1;
     }
 }
